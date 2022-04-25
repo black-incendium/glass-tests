@@ -80,7 +80,7 @@ function runMainFlow() {
     let color = {
         r:50,
         g:90,
-        b:190
+        b:255
     }
 
     let gapSize = 1 *2/canvas.width;
