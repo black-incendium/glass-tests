@@ -78,9 +78,9 @@ function runMainFlow() {
     }
 
     let color = {
-        r:50,
-        g:90,
-        b:255
+        r:0.2,
+        g:0.4,
+        b:0.9
     }
 
     let gapSize = 1 *2/canvas.width;
@@ -111,7 +111,7 @@ function runMainFlow() {
 
     gl.vertexAttribPointer(
         colorAttribLocation, //Attribute location
-        3, //number of elements per attribute (2 because vertexPosition is vec2)
+        3, //number of elements per attribute (3 because vertexPosition is vec3)
         gl.FLOAT, //type of elements
         gl.FALSE, //is data normalized
         5 * Float32Array.BYTES_PER_ELEMENT, //size of an individual vertex (2 because 2 numbers and 4 is size of float)
